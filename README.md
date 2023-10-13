@@ -56,7 +56,6 @@ vous trouverai le script [adduser.sh](https://github.com/michaelc31/Checkpoint1/
 	utilisateur3=$3
 
 
-
 	if [ -z $1 ]
 
 	then 
@@ -73,7 +72,6 @@ vous trouverai le script [adduser.sh](https://github.com/michaelc31/Checkpoint1/
 
 			echo "utilisateur $utilisateur1 existe deja"
 
-			exit 1
 
 		else
 
@@ -101,7 +99,6 @@ vous trouverai le script [adduser.sh](https://github.com/michaelc31/Checkpoint1/
 
 			echo "utilisateur $utilisateur2 existe deja"
 
-			exit 1
 
 		else
 
@@ -129,7 +126,6 @@ vous trouverai le script [adduser.sh](https://github.com/michaelc31/Checkpoint1/
 
 			echo "utilisateur $utilisateur3 existe deja"
 
-			exit 1
 
 		else
 
