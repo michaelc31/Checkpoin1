@@ -144,7 +144,7 @@ Commande utilisé `nano /etc/fstab`
 
 ## Exercice 3 : Quiz
 
-| question | response |
+| Question | Réponse |
 | :-------: | :------- | 
 | 1  |  la commande permettant d'afficher les utilisateur est : `cat /etc/passwd`  |
 | 2  |  la commande pour changer les droit d'acces au fichier est `chmod`  |
@@ -155,4 +155,4 @@ Commande utilisé `nano /etc/fstab`
 | 7  |  les couches de modeles OSI au niveau 2 et 3 sont les couches Réesaux et Liaisons du coup on travaillera sur le l'adressage IP et MAC du coup on trouvera comme materiel réseaux des carte Reseau, des routeurs, les commutateur, switch. exemple (PC client, box ADSL,)   |
 | 8  |  les commande powershell pour les commande bash sont : `cd =  Set-Location` ; `cp = Copy-Item` ; `mkdir = New-Item` ; `ls = Get-ChildItem`  |
 | 9  |  le Payload est la charge utile dans une trame ethernet elle va varier selon le type d'adressage IP (ipv4 ipv6) , le protocole utiliser (tcp , udp) et les données. |
-| 10 |  Les Classes IP ont été remplacer par le CIDR car les calsses IP comprennait trop de contrainte (nb d'adresse IP pas assez importante ou Trop importante selon la classe) et le CIDR permet de mieux decouper votre reseaux  |
+| 10 |  Les Classes IP ont été remplacer par le CIDR car les calsses IP comprennait trop de contrainte (nb d'adresse IP pas assez importante ou Trop importante selon la classe ex: classe C : 2^8-2 = 254 adresses classe B : 2^16-2 =65534 adresses) et le CIDR permet de mieux decouper votre reseaux en adaptant au mieux le masque de sous reseau |
