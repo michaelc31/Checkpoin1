@@ -41,103 +41,103 @@ en tapant la ligne suivnate :
 
 # Exercices 2 : Script de création d'utilisateurs en bash
 
-#! /bin/bash
+	#! /bin/bash
 
 
 
-utilisateur1=$1 
+	utilisateur1=$1 
 
-utilsateur2=$2
+	utilsateur2=$2
 
-utilisateur3=$3
+	utilisateur3=$3
 
 
 
-if [ -z $1 ]
+	if [ -z $1 ]
 
-then 
+	then 
 
-	echo "Il manque les noms d'utilisateurs en argument - Fin du script"
+		echo "Il manque les noms d'utilisateurs en argument - Fin du script"
 
-	exit 1
+		exit 1	
 
-else
+	else
 
-	if [ -z /etc/passwd | grep "$1" ]
+		if [ -z /etc/passwd | grep "$1" ]
 
-	then
+		then
 
-		echo "utilisateur $utilisateur1 existe deja"
+			echo "utilisateur $utilisateur1 existe deja"
+
+			exit 1
+
+		else
+
+			adduser $1
+
+			echo "L'utilisateur $utlisateur1 a été crée"
+
+		fi
+
+	fi
+
+	if [ -z $2 ]
+
+	then 
+
+		echo "Il manque les noms d'utilisateurs en argument - Fin du script"
 
 		exit 1
 
 	else
 
-		adduser $1
+		if [ cat /etc/passwd | grep "$2" ]
 
-		echo "L'utilisateur $utlisateur1 a été crée"
+		then
+
+			echo "utilisateur $utilisateur2 existe deja"
+
+			exit 1
+
+		else
+
+			adduser $2
+
+			echo "L'utilisateur $utlisateur2 a été crée"	
+
+		fi
 
 	fi
 
-fi
+	if [ -z $3 ]
 
-if [ -z $2 ]
+	then 
 
-then 
-
-	echo "Il manque les noms d'utilisateurs en argument - Fin du script"
-
-	exit 1
-
-else
-
-	if [ cat /etc/passwd | grep "$2" ]
-
-	then
-
-		echo "utilisateur $utilisateur2 existe deja"
+		echo "Il manque les noms d'utilisateurs en argument - Fin du script"
 
 		exit 1
 
 	else
 
-		adduser $2
+		if [ cat /etc/passwd | grep "$3" ]
 
-		echo "L'utilisateur $utlisateur2 a été crée"	
+		then
 
-	fi
+			echo "utilisateur $utilisateur3 existe deja"
 
-fi
+			exit 1
 
-if [ -z $3 ]
+		else
 
-then 
+			adduser $3
 
-	echo "Il manque les noms d'utilisateurs en argument - Fin du script"
+			echo "L'utilisateur $utlisateur3 a été crée"	
 
-	exit 1
-
-else
-
-	if [ cat /etc/passwd | grep "$3" ]
-
-	then
-
-		echo "utilisateur $utilisateur3 existe deja"
-
-		exit 1
-
-	else
-
-		adduser $3
-
-		echo "L'utilisateur $utlisateur3 a été crée"	
+		fi
 
 	fi
 
-fi
-
-exit 0
+	exit 0
 
 
 ## Exercice 3 : Quiz
