@@ -2,7 +2,7 @@
 
 ## 1.1 Préparation du disque
 
-il m'as etai demander de crée 2 partitions : 1 de 6Go nomme "DATA" et une autre de 4Go nommée "SWAP"
+il m'as etait demander de crée 2 partitions : 1 de 6Go nomme "DATA" et une autre de 4Go nommée "SWAP"
 
 le 1er imprime ecran montre la création des partitions, l'espace disque alloue a ses partitions.
 
@@ -17,8 +17,10 @@ le 2eme imprime ecran montre le systeme de fichier alloué aux partitions. et l'
 commande utilisé `mkfs` ; `swapon` et `swapoff`
 mkfs.ext4 -L "DATA" /dev/sdb1
 mksawp -L "SWAP" /dev/sdb2
+swapon /dev/sdb2
+swapoff /dev/sda5
 
-![img]()
+![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture3.PNG)
 ## 1.2 Montage
 
 nous allons maintenant activer le montage automatique en allant modifier le fichier `/etc/fstab`
