@@ -2,20 +2,20 @@
 
 ## 1.1 Préparation du disque
 
-Il m'as était demandé de crée 2 partitions : 1 de 6Go nomme "DATA" et une autre de 4Go nommée "SWAP"
+Il m'as était demandé de créer 2 partitions : 1 de 6Go nomme "DATA" et une autre de 4Go nommée "SWAP"
 
 Le premier imprime écran montre la création des partitions, ainsi que l'espace disque alloué à ses partitions.
 
 ![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture0.PNG)
 
-Commande utilisé `cfdisk` 
+Commande utilisée `cfdisk` 
 
 
 Le deuxième imprime écran montre le systeme de fichier alloué aux partitions et l'activation de la partition "SWAP" crée précedanment
 
 ![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture1.PNG)
 
-Commande utilisé `mkfs` ; `swapon` et `swapoff`
+Commandes utilisées `mkfs` ; `swapon` et `swapoff`
 
 `mkfs.ext4 -L "DATA" /dev/sdb1`
 
@@ -48,14 +48,14 @@ vous trouverai le script [adduser.sh](https://github.com/michaelc31/Checkpoint1/
 	#! /bin/bash
 
 
-
+#---------- VARIABLE ---------------------
 	utilisateur1=$1 
 
 	utilsateur2=$2
 
 	utilisateur3=$3
 
-
+#------------ MAIN ---------------------
 	if [ -z $1 ]
 
 	then 
