@@ -2,7 +2,7 @@
 
 ## 1.1 Préparation du disque
 
-Il m'as était demander de crée 2 partitions : 1 de 6Go nomme "DATA" et une autre de 4Go nommée "SWAP"
+Il m'as était demandé de crée 2 partitions : 1 de 6Go nomme "DATA" et une autre de 4Go nommée "SWAP"
 
 Le premier imprime écran montre la création des partitions, ainsi que l'espace disque alloué à ses partitions.
 
@@ -43,7 +43,7 @@ Commande utilisé `nano /etc/fstab`
 
 # Exercices 2 : Script de création d'utilisateurs en bash
 
-vous trouverai le script [script](https://github.com/michaelc31/Checkpoint1/blob/main/adduser.sh)
+vous trouverai le script [adduser.sh](https://github.com/michaelc31/Checkpoint1/blob/main/adduser.sh)
 
 	#! /bin/bash
 
