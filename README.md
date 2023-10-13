@@ -15,10 +15,14 @@ le 2eme imprime ecran montre le systeme de fichier alloué aux partitions. et l'
 ![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture1.PNG)
 
 commande utilisé `mkfs` ; `swapon` et `swapoff`
-mkfs.ext4 -L "DATA" /dev/sdb1
-mksawp -L "SWAP" /dev/sdb2
-swapon /dev/sdb2
-swapoff /dev/sda5
+
+`mkfs.ext4 -L "DATA" /dev/sdb1`
+
+`mksawp -L "SWAP" /dev/sdb2`
+
+`swapon /dev/sdb2`
+
+`swapoff /dev/sda5`
 
 ![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture3.PNG)
 ## 1.2 Montage
