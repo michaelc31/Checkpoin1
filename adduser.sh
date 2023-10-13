@@ -1,6 +1,6 @@
 #! /bin/bash
 
-
+#---------- VARIABLE --------------
 
 	utilisateur1=$1 
 
@@ -8,7 +8,7 @@
 
 	utilisateur3=$3
 
-
+#---------- MAIN -----------------
 
 	if [ -z $1 ]
 
