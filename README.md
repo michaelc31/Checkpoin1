@@ -25,6 +25,7 @@ commande utilisé `mkfs` ; `swapon` et `swapoff`
 `swapoff /dev/sda5`
 
 ![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture3.PNG)
+
 ## 1.2 Montage
 
 nous allons maintenant activer le montage automatique en allant modifier le fichier `/etc/fstab`
@@ -33,7 +34,8 @@ en tapant la ligne suivnate :
 `UUID=ef60467b-99a4-4ce3-bedc-66cc0a306da7 /mnt  ext4 defaults 0 2`
 
 ![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture4.PNG)
-![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture4.PNG)
+
+![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture5.PNG)
 
 
 
