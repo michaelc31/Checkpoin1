@@ -6,23 +6,24 @@ il m'as etai demander de crée 2 partitions : 1 de 6Go nomme "DATA" et une autre
 
 le 1er imprime ecran montre la création des partitions, l'espace disque alloue a ses partitions.
 
-![img]()
+![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture0.PNG)
 
 commande utiliser cfdisk 
 
 le 2eme imprime ecran montre le systeme de fichier alloué aux partitions. et l'activation de la partition "SWAP" crée précedanment
 
-![img]()
+![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture1.PNG)
 
 commande utilisé `mkfs` ; `swapon` et `swapoff`
-
-nous allons renomme les partitions pour quel correspondent a l'exercices avec la commande ``
+mkfs.ext4 -L "DATA" /dev/sdb1
+mksawp -L "SWAP" /dev/sdb2
 
 ![img]()
-
 ## 1.2 Montage
 
 nous allons maintenant activer le montage automatique en allant modifier le fichier `/etc/fstab`
+
+en tapant les ligne suivnate :
 
 ![img]()
 
