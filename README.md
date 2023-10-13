@@ -49,6 +49,7 @@ vous trouverai le script [adduser.sh](https://github.com/michaelc31/Checkpoint1/
 
 
 #---------- VARIABLE ---------------------
+
 	utilisateur1=$1 
 
 	utilsateur2=$2
@@ -56,6 +57,7 @@ vous trouverai le script [adduser.sh](https://github.com/michaelc31/Checkpoint1/
 	utilisateur3=$3
 
 #------------ MAIN ---------------------
+
 	if [ -z $1 ]
 
 	then 
