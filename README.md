@@ -25,10 +25,11 @@ swapoff /dev/sda5
 
 nous allons maintenant activer le montage automatique en allant modifier le fichier `/etc/fstab`
 
-en tapant les ligne suivnate :
+en tapant la ligne suivnate :
+`UUID=ef60467b-99a4-4ce3-bedc-66cc0a306da7 /mnt  ext4 defaults 0 2`
 
-![img]()
-
+![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture4.PNG)
+![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture4.PNG)
 
 
 
