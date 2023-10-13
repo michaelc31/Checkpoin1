@@ -43,6 +43,8 @@ Commande utilisé `nano /etc/fstab`
 
 # Exercices 2 : Script de création d'utilisateurs en bash
 
+vous trouverai le script [script](https://github.com/michaelc31/Checkpoint1/blob/main/adduser.sh)
+
 	#! /bin/bash
 
 
