@@ -65,7 +65,7 @@ Commande utilisé `nano /etc/fstab`
 
 	else
 
-		if [ -z /etc/passwd | grep "$1" ]
+		if [ cat /etc/passwd | grep "$1" ]
 
 		then
 
