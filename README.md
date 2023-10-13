@@ -2,19 +2,20 @@
 
 ## 1.1 Préparation du disque
 
-il m'as etait demander de crée 2 partitions : 1 de 6Go nomme "DATA" et une autre de 4Go nommée "SWAP"
+Il m'as était demander de crée 2 partitions : 1 de 6Go nomme "DATA" et une autre de 4Go nommée "SWAP"
 
-le 1er imprime ecran montre la création des partitions, l'espace disque alloue a ses partitions.
+Le premier imprime écran montre la création des partitions, ainsi que l'espace disque alloué à ses partitions.
 
 ![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture0.PNG)
 
-commande utiliser cfdisk 
+Commande utilisé `cfdisk` 
 
-le 2eme imprime ecran montre le systeme de fichier alloué aux partitions. et l'activation de la partition "SWAP" crée précedanment
+
+Le deuxième imprime écran montre le systeme de fichier alloué aux partitions et l'activation de la partition "SWAP" crée précedanment
 
 ![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture1.PNG)
 
-commande utilisé `mkfs` ; `swapon` et `swapoff`
+Commande utilisé `mkfs` ; `swapon` et `swapoff`
 
 `mkfs.ext4 -L "DATA" /dev/sdb1`
 
@@ -28,10 +29,11 @@ commande utilisé `mkfs` ; `swapon` et `swapoff`
 
 ## 1.2 Montage
 
-nous allons maintenant activer le montage automatique en allant modifier le fichier `/etc/fstab`
+Nous allons maintenant activer le montage automatique en allant modifier le fichier `/etc/fstab` en l'ouvrant avec Nano.
 
-en tapant la ligne suivnate :
-`UUID=ef60467b-99a4-4ce3-bedc-66cc0a306da7 /mnt  ext4 defaults 0 2`
+En tapant la ligne suivnate : `UUID=ef60467b-99a4-4ce3-bedc-66cc0a306da7 /mnt  ext4 defaults 0 2`
+
+Commande utilisé `nano /etc/fstab`
 
 ![img](https://github.com/michaelc31/Checkpoint1/blob/main/Capture4.PNG)
 
@@ -143,7 +145,7 @@ en tapant la ligne suivnate :
 ## Exercice 3 : Quiz
 
 | question | response |
-| -------|  -------| 
+| :-------: | :------- | 
 | 1  |  la commande permettant d'afficher les utilisateur est : `cat /etc/passwd`  |
 | 2  |  la commande pour changer les droit d'acces au fichier est `chmod`  |
 | 3  | pour ne pas envoyer les fichier PDF d'un depot local gît il suffit de ne pas faire de `git add` et `git comit` sur les fichier .pdf ccomme ca tout les fichier qui auront eu un `git commit` pourrons etre envoyé |
